@@ -1,0 +1,30 @@
+:root {
+  --primaryBackground: hsl(233, 47%, 7%);
+  --primaryCard: hsl(244, 38%, 16%);
+  --primaryAccent: hsl(277, 64%, 61%);
+
+  --white: #ffffff;
+  --whiteMainParagraph: hsla(0, 0%, 100%, 0.75);
+  --whiteStatHeading: hsla(0, 0%, 100%, 0.6);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Overpass", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+body {
+  background: var(--primaryBackground);
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
