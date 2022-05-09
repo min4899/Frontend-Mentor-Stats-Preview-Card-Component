@@ -1,7 +1,7 @@
 :root {
   --primaryBackground: hsl(233, 47%, 7%);
   --primaryCard: hsl(244, 38%, 16%);
-  --primaryAccent: hsl(277, 64%, 61%);
+  --accent: hsl(277, 64%, 61%);
 
   --white: #ffffff;
   --whiteMainParagraph: hsla(0, 0%, 100%, 0.75);
@@ -17,7 +17,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Overpass", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 15px;
   font-weight: 400;
 }
@@ -27,4 +27,75 @@ body {
   display: grid;
   place-items: center;
   height: 100vh;
+}
+
+h1 {
+  color: var(--white);
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+p {
+  color: var(--whiteMainParagraph);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.75;
+}
+
+span {
+  font-size: inherit;
+  font-weight: inherit;
+  color: var(--accent);
+}
+
+.card {
+  background: var(--primaryCard);
+  width: 70rem;
+  height: 30rem;
+  border-radius: 0.5em;
+  overflow: hidden;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  /*
+  for phone screens:
+  flex-direction: column;
+  text-align: center; 
+  */
+}
+
+.textarea {
+  flex-grow: 1;
+  height: 100%;
+  padding: 6%;
+}
+
+.header-image {
+  /* width: 50%; */
+}
+
+.stats-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.stat {
+  font-family: "Lexend Deca", sans-serif;
+  
+}
+
+.stat h2 {
+  font-family: inherit;
+  color: var(--white);
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+
+.stat p {
+  font-family: inherit;
+  color: var(--whiteStatHeading);
+  font-size: 1rem;
+  font-weight: 400;
 }
