@@ -31,7 +31,7 @@ body {
 
 h1 {
   color: var(--white);
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: 700;
 }
 
@@ -67,7 +67,10 @@ span {
 .textarea {
   flex-grow: 1;
   height: 100%;
-  padding: 6%;
+  padding: 5% 7%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .header-image {
@@ -96,6 +99,6 @@ span {
 .stat p {
   font-family: inherit;
   color: var(--whiteStatHeading);
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 400;
 }
