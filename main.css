@@ -31,7 +31,7 @@ body {
 
 h1 {
   color: var(--white);
-  font-size: 2.2rem;
+  font-size: clamp(1.8rem, 6vw, 2.4rem);
   font-weight: 700;
 }
 
@@ -50,7 +50,8 @@ span {
 
 .card {
   background: var(--primaryCard);
-  max-width: 70rem;
+  max-width: 74rem;
+  height: 446px;
   border-radius: 0.5em;
   margin: 2em;
   overflow: hidden;
@@ -64,6 +65,7 @@ span {
     flex-direction: column-reverse;
     text-align: center;
     max-width: 654px;
+    height: fit-content;
   }
 }
 
@@ -96,10 +98,17 @@ span {
 
 .textarea {
   flex: 1;
-  padding: 5% 7%;
+  padding: 6% 10% 5% 6%;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
+  gap: 2em;
+}
+
+@media (max-width: 768px) {
+  .textarea {
+    padding: 2.5rem 2rem;
+    gap: 1em;
+  }
 }
 
 .stats-section {
@@ -115,7 +124,7 @@ span {
   .stats-section {
     flex-direction: column;
     justify-content: space-between;
-    margin: 2em 0;
+    margin-top: 1.5rem;
     gap: 2em;
   }
 }
