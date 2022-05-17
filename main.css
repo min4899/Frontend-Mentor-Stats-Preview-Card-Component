@@ -31,7 +31,7 @@ body {
 
 h1 {
   color: var(--white);
-  font-size: clamp(1.8rem, 6vw, 2.4rem);
+  font-size: clamp(1.8rem, 3.5vw, 2.4rem);
   font-weight: 700;
 }
 
@@ -99,15 +99,15 @@ span {
 .textarea {
   flex: 1;
   padding: 6% 10% 5% 6%;
+  padding-right: clamp(6%, 7vw, 10%);
   display: flex;
   flex-direction: column;
-  gap: 2em;
+  gap: clamp(1rem, 1.4vw, 2rem);
 }
 
 @media (max-width: 768px) {
   .textarea {
     padding: 2.5rem 2rem;
-    gap: 1em;
   }
 }
 
