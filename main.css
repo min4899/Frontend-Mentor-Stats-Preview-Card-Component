@@ -64,7 +64,8 @@ span {
   .card {
     flex-direction: column-reverse;
     text-align: center;
-    max-width: 654px;
+    /* max-width: 654px; */
+    max-width: 580px;
     height: fit-content;
   }
 }
@@ -82,23 +83,36 @@ span {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%
+  height: 100%;
+}
+
+.image {
+  height: 100%;
+}
+
+.card-image img {
+  height: 100%;
 }
 
 @media (max-width: 768px) {
   .card-image img {
-    max-width:100%;
-    max-height:100%;
+    max-width: 100%;
   }
 }
 
 .textarea {
   flex: 1;
   padding: 6% 10% 5% 6%;
-  padding-right: clamp(6%, 8vw, 10%);
   display: flex;
   flex-direction: column;
-  gap: clamp(1rem, 1.4vw, 2rem);
+  gap: 2rem;
+}
+
+@media (max-width: 1150px) {
+  .textarea {
+    padding-right: clamp(6%, 8vw, 10%);
+    gap: clamp(1rem, 1.4vw, 2rem);
+  }
 }
 
 @media (max-width: 768px) {
@@ -112,7 +126,7 @@ span {
   justify-self: end;
   flex-direction: row;
   justify-content: space-between;
-  gap: 1em;
+  gap: 1rem;
   margin-top: auto;
 }
 
