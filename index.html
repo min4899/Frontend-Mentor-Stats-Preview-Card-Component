@@ -36,20 +36,12 @@
           </div>
         </div>
       </div>
-      <div class="header-image">
+      <div class="card-image">
         <div class="overlay"></div>
-        <img
-          src="image-header-desktop.jpg"
-          alt="Image Header"
-        />
-        <!-- <img
-          srcset="image-header-mobile.jpg 654w,
-                  image-header-desktop.jpg 550w"
-          sizes="(max-width: 768px) 654px,
-                  550px"
-          src="image-header-desktop.jpg"
-          alt="Image Header"
-        /> -->
+        <picture class="image">
+          <source media="(max-width:768px)" srcset="image-header-mobile.jpg">
+          <img src="image-header-desktop.jpg" alt="Image Header">
+        </picture>
       </div>
     </div>
   </body>
