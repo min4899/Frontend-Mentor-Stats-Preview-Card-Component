@@ -123,7 +123,6 @@ span {
 
 .stats-section {
   display: flex;
-  justify-self: end;
   flex-direction: row;
   justify-content: space-between;
   gap: 1rem;
