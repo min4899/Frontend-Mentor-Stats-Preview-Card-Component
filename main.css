@@ -73,7 +73,7 @@ span {
   position: relative;
   display: grid;
   place-items: center;
-  max-width: 540px;
+  width: min(48vw, 540px);
 }
 
 .card-image-with-overlay .overlay {
@@ -92,6 +92,10 @@ span {
 }
 
 @media (max-width: 768px) {
+  .card-image-with-overlay {
+    width: auto;
+  }
+
   .card-image-with-overlay img {
     max-width: 100%;
   }
