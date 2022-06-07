@@ -64,8 +64,6 @@ span {
   .card {
     flex-direction: column-reverse;
     text-align: center;
-    /* max-width: 654px; */
-    /* max-width: 580px; */
     max-width: 25rem;
     height: fit-content;
   }
@@ -75,7 +73,6 @@ span {
   position: relative;
   display: grid;
   place-items: center;
-  width: fit-content;
   max-width: 540px;
 }
 
@@ -101,18 +98,18 @@ span {
 }
 
 .textarea {
-  padding: 4.5rem 7.5rem 4.5rem 4.5rem;
   display: flex;
   flex-direction: column;
+  padding: 4.5rem 7.5rem 4.5rem 4.5rem;
   gap: 2rem;
 }
 
-/* @media (max-width: 1150px) {
+@media (max-width: 1150px) {
   .textarea {
-    padding-right: clamp(6%, 8vw, 10%);
+    padding: clamp(2rem, 5vw, 4.5rem);
     gap: clamp(1rem, 1.4vw, 2rem);
   }
-} */
+}
 
 @media (max-width: 768px) {
   .textarea {
