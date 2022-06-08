@@ -116,14 +116,8 @@ span {
 
 @media (max-width: 1150px) {
   .textarea {
-    padding: clamp(2rem, 6vw, 4.5rem);
+    padding: clamp(2.5rem, 6vw, 4.5rem) clamp(0.5rem, 7.5vw, 4.5rem);
     gap: clamp(1rem, 1.4vw, 2rem);
-  }
-}
-
-@media (max-width: 768px) {
-  .textarea {
-    padding: 2.5rem 2rem;
   }
 }
 
@@ -139,7 +133,7 @@ span {
   .stats-section {
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 1.5rem;
+    margin-top: 1.8rem;
     gap: 2em;
   }
 }
