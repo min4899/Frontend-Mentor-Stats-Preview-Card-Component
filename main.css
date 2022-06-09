@@ -79,7 +79,7 @@ span {
   position: relative;
   display: grid;
   place-items: center;
-  width: min(48vw, 540px);
+  width: min(47vw, 540px);
 }
 
 .card-image-with-overlay .overlay {
@@ -111,9 +111,9 @@ span {
   display: flex;
   flex-direction: column;
   padding: 4.5rem 7.5rem 4rem 4.5rem;
-  padding-left: clamp(2rem, 6vw, 5rem);
-  padding-right: clamp(2rem, 8vw, 7.5rem);
-  gap: clamp(1rem, 2vw, 1.8rem);
+  padding-left: clamp(2rem, 6.5vw, 5rem);
+  padding-right: clamp(2rem, 9.5vw, 7.5rem);
+  gap: clamp(1rem, 2.5vw, 1.8rem);
 }
 
 @media (max-width: 768px) {
