@@ -55,6 +55,7 @@ span {
 }
 
 .card {
+  z-index: 1;
   background: var(--primaryCard);
   max-width: 74rem;
   min-height: 446px;
@@ -154,4 +155,18 @@ span {
   color: var(--whiteStatHeading);
   font-size: 0.9rem;
   font-weight: 400;
+}
+
+.attribution {
+  z-index: 0;
+  position: absolute;
+  bottom: 1rem;
+  text-align: center;
+  color: var(--white);
+}
+
+@media (max-width: 768px) {
+  .attribution {
+    position: relative;
+  }
 }
